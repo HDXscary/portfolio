@@ -5,12 +5,15 @@ body{
 
 nav {
     background: #2C3E50;
-    text-align: center;
-    padding: 12px 0;
+    padding: 12px 20px;
     position: sticky;
     top: 0;
-    z-index: auto;
+    z-index: 2;
     box-shadow: 0 0 20px;
+}
+
+#lg{
+    width: 2%;
 }
 
 nav a {
@@ -23,9 +26,15 @@ nav a {
     font-size: 25px;
 }
 
+#CONTACT{
+    margin-left: 55%;
+}
+
 nav :hover{
     color: red;
 }
+
+
 
 .presentation{
     color: #48DBFB;
@@ -42,6 +51,48 @@ nav :hover{
 
 #logo {
     opacity:50%;
-    margin-left: 950px;
-    margin-top: -450px;
+    margin-left: 57%;
+    margin-top: -23%;
+    z-index: 1;
+}
+
+.title{
+    margin-top: 10%;
+    font-size: 35px;
+    color: #48DBFB;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    text-decoration: underline;
+}
+
+.text{
+    font-size: 25px;
+    color: #fff;
+    margin-left: 3%;
+}
+
+.parcour{
+    text-decoration: underline;
+    margin-bottom: 3%;
+    font-size: 25px;
+    color: #48DBFB;
+}
+
+#PARCOUR{
+    color: #fff;
+    text-align: right;
+    margin-right: 3%;
+}
+
+.metier{
+    margin-bottom: 5%;
+    font-size: 25px;
+    margin-left: 3%;
+}
+
+.saut{
+    margin-bottom: 20%;
+    font-size: 25px;
+    margin-left: 3%;
+    color: #fff;
 }
