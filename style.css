@@ -8,6 +8,8 @@ body{
 }
 
 nav {
+    display: flex;
+    flex-wrap: wrap;
     background: #2C3E50;
     padding: 12px 20px;
     position: sticky;
@@ -19,7 +21,7 @@ nav {
 #lg{
     width: 38px;
     position:absolute;
-    top: 7px;
+    top: 17px;
 }
 
 nav a {
@@ -34,7 +36,7 @@ nav a {
 }
 
 #CONTACT{
-    margin-left: 28%;
+    text-align: right;
 }
 
 nav :hover{
@@ -61,6 +63,21 @@ nav :hover{
     z-index: 1;
     padding-top: 5%;
 }
+
+@media (max-width: 1440px) {
+    #logo {
+        margin-left: 50%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    #logo {
+        display: none;
+    }
+}
+
+
 
 .title{
     margin-top: 8%;
@@ -102,4 +119,44 @@ nav :hover{
     font-size: 25px;
     margin-left: 3%;
     color: #fff;
+}
+
+.caseprojets{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 88%;
+    height: 550px;
+    background: #2C3E50;
+    margin-left: 3%;
+    box-shadow: 0 8px 15px #212e3b;
+    padding: 3%;
+}
+
+.projet{
+    width: 85%;
+    height: 550px;
+    background: #D9D9D9;
+    box-shadow: 0 8px 15px #212e3b;
+}
+
+#projet2{
+    justify-self: center;
+}
+
+#projet3{
+    justify-self: end;
+}
+
+.pro1{
+    width: 94%;
+    height: auto;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.texteprojet{
+    font-size: 20px;
+    margin-left: 3%;
+    margin-top: 3%;
+    color: #000;
 }
