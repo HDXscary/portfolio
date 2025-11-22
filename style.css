@@ -7,6 +7,12 @@ body{
     margin: 0;
 }
 
+#CV{
+    background-color: #223343;
+    padding: 12px 20px;
+    border-radius: 50px;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -24,23 +30,64 @@ nav {
     top: 17px;
 }
 
-nav a {
+#menu{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#menu a {
     color: white;
     text-decoration: none;
     padding: 12px 20px;
     font-weight: 600;
     transition: color 0.3s, background 0.3s;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 25px;
     margin-left: 50px;
 }
 
-#CONTACT{
-    text-align: right;
+
+#CV{
+    background-color: #223343;
 }
+
 
 nav :hover{
     color: red;
+}
+
+@media screen and (max-width: 1509px) {
+  #lg {
+    display: block;
+  }
+ 
+  nav{
+    min-height: 52px;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+  }
+ 
+  #menu.show {
+    margin-left: 40px;
+    display: flex;
+  }
+ 
+  #menu a {
+    margin: 10px 0;
+    display: block;
+  }
+}
+ 
+@media screen and (min-width: 1510px) {
+ 
+  #menu {
+    display: flex !important;
+    flex-direction: row;
+  }
 }
 
 .presentation{

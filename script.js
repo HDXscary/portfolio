@@ -1,3 +1,8 @@
+document.getElementById("lg").onclick = function() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle('show');
+};
+
 document.getElementById('requeteform').addEventListener('submit', function(e) {
     e.preventDefault();
 
