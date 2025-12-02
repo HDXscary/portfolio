@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom HILAIRE - PORTEFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img id="lg" src="image/logo1.png" alt="Photo de profil" >
+        <div id="menu">
+            <a href="index.html#Tom">ACCUEIL</a>
+            <a href="index.html#moi">MIEUX ME CONNAÎTRE</a>
+            <a href="index.html#PARCOUR">MON PARCOUR</a>
+            <a href="index.html#PROJETS">MES PROJETS</a>
+            <a href="CV.html" id="CV" >CV</a>
+            <a href="index.html#casecontact" id="CONTACT">CONTACT</a>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <img id="imgprojet2" src="image/imgprojet3.png" alt="img²projet3">
+        <section>
+            <p class="texte-pages-projet2">Ce projet est un projet du site web CSSBattle où nous devons reproduire une forme avec uniquement du code CSS.</p>
+        </section>
+        <section>
+            <pre id="code-projet" style="display: none;">
+                <code>
+                    &lt;P&gt;
+                    &lt;style&gt;
+                        & {
+                            background: #EA9A52;
+                            margin: 82px 52px;
+                            * {
+                                background: #6255AA;
+                                clip-path: polygon(0 50%, 80px 0, 200px 0, 100% 50%, 200px 100%, 80px 100%);
+                                P {
+                                    height: 100%;
+                                    background: #fff;
+                                    clip-path: polygon(0 0, 50% 45px, 100% 0, 100% 100%, 50% 75px, 0 100%);
+                                    margin: 0 80px;
+                                }
+                            }
+                        }
+                    &lt;/style&gt;
+                </code>
+            </pre>
+            <button id="btn-afficher-code" onclick="toggleCode()">Afficher le code</button>
+        </section>
+        <section>
+            <button id="btn-retour" onclick="window.location.href='index.html#PROJETS'">retour</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>

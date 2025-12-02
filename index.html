@@ -4,36 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom HILAIRE - PORTEFOLIO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <img id="lg" src="image/logo 1.png" alt="Photo de profil" />
+        <img id="lg" src="image/logo1.png" alt="Photo de profil" >
         <div id="menu">
-            <a href="#logo">ACCEUIL</a>
-            <a href="#moi">MIEUX ME CONNAÎTRE</a>
-            <a href="#PARCOUR">MON PARCOUR</a>
-            <a href="#PROJETS">MES PROJETS</a>
-            <a href="#CV.html" id="CV" >CV</a>
-            <a href="#casecontact" id="CONTACT">CONTACT</a>
+            <a href="#tom-link" class="nav-link active">ACCUEIL</a>
+            <a href="#mmc-link" class="nav-link">MIEUX ME CONNAÎTRE</a>
+            <a href="#PARCOUR" class="nav-link">MON PARCOUR</a>
+            <a href="#PROJETS" class="nav-link">MES PROJETS</a>
+            <a href="CV.html" id="CV" >CV</a>
+            <a href="#casecontact" class="nav-link" id="CONTACT">CONTACT</a>
         </div>
     </nav>
-    <section>
-        <main>
+    <main>
+        <section id="tom-link">
             <h2 class="presentation" id="Tom">Tom HILAIRE</h2>
             <p class="presentation">Etudiant en BTS SIO</p>
-            <img id="logo" src="image/logo 1.png" alt="Photo de profil" />
-        </main>
-    </section>
-    <section>
-        <main>
-            <h2 id="moi"class="title">MIEUX ME CONNAÎTRE</h2>
+            <img id="logo" src="image/logo1.png" alt="Photo de profil" >
+        </section>
+        <section id="mmc-link">
+            <h2 id="moi" class="title">MIEUX ME CONNAÎTRE</h2>
             <p class="text">Je m'appelle Tom HILAIRE, j'ai 19 ans </p>
             <p class="saut">Je suis également passionné par le sport et l'informatique.</p>
-        </main>
-    </section>
-    <section>
-        <main id="PARCOUR">
+        </section>
+        <section id="PARCOUR">
             <h2 class="title">MON PARCOUR</h2>
             <h2 class="parcour">ÉTUDES</h2>
             <p class="metier">BTS SIO au Lycée saint- Bénigne (en cours)</p>
@@ -44,28 +42,26 @@
             <p class="metier">entreprise STACKR</p>
             <p class="text">Technicien support de niveau 1 en 2024</p>
             <p class="metier">entreprise STACKR</p>
-        </main>
-    </section>
-    <section>
-        <main id="PROJETS">
-            <h2 class="title">MES PROJETS</h2>
+        </section>
+        <section id="PROJETS">
+            <h2  id="mesprojets">MES PROJETS</h2>
             <div class="caseprojets">
-                <div class="projet">
-                    <img class="pro1" src="image/projet1.1.png" alt="projet1"/>
+                <div onclick="window.location.href='projet1.html'" class="projet">
+                    <img class="pro1" src="image/projet1.3.png" alt="projet1">
                     <p class="texteprojet">Ce projet est un projet personnel, qui a pour but que, lorsqu'une personne a une requête en informatique, elle puisse aller sur ce site web, remplir le formulaire et enfin me l'envoyer par mail.</p>
                 </div>
-                <div id="projet2"class="projet">
-
+                <div onclick="window.location.href='projet2.html'" id="projet2" class="projet">
+                    <img class="pro1" src="image/imgprojet2.png" alt="projet1">
+                    <p class="texteprojet">Ce projet est un exercice réalisé sur un site web CSSBattle.</p>
                 </div>
-                <div id="projet3"class="projet">
-
+                <div onclick="window.location.href='projet3.html'" id="projet3" class="projet">
+                    <img class="pro1" src="image/imgprojet3.png" alt="projet1">
+                    <p class="texteprojet">Ce projet est un exercice réalisé sur un site web CSSBattle.</p>
                 </div>
             </div>
-        </main>
-    </section>
-    <section>
-        <main id="casecontact">
-            <h2  id="cont" class="title">CONTACT</h2>
+        </section>
+        <section id="casecontact">
+            <h2 class="title">CONTACT</h2>
             <div id="Numéro">
                 <p class="text">Numéro : 06 17 27 08 85</p>
                 <p class="text">Email : tomhilaire9@gmail.com</p>
@@ -75,8 +71,8 @@
                     <p class="formulaire">formulaire pour me contacter</p>
                     <form id="requeteform">
                         <div class="form-group">
-                            <label for="name">prenom *</label>
-                            <input type="text" id="name" name="name" placeholder="Votre prenom" required>
+                            <label for="name">nom *</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
                         </div>
 
                         <div class="form-group">
@@ -94,8 +90,8 @@
                     <div id="formMessage"></div>
                 </div>
             </div>
-        </main>
-    </section>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

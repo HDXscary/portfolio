@@ -7,12 +7,6 @@ body{
     margin: 0;
 }
 
-#CV{
-    background-color: #223343;
-    padding: 12px 20px;
-    border-radius: 50px;
-}
-
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -47,14 +41,17 @@ nav {
     margin-left: 50px;
 }
 
-
 #CV{
     background-color: #223343;
 }
 
-
-nav :hover{
+#menu :hover{
     color: red;
+}
+
+#menu a.active {
+    background: #48DBFB;
+    color: #2C3E50;
 }
 
 @media screen and (max-width: 1509px) {
@@ -109,6 +106,13 @@ nav :hover{
     margin-top: -28%;
     z-index: 1;
     padding-top: 5%;
+}
+
+@media (max-width: 1666px) {
+    #logo {
+        margin-left: 50%;
+        width: 50%;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -177,13 +181,32 @@ nav :hover{
     margin-left: 3%;
     box-shadow: 0 8px 15px #212e3b;
     padding: 3%;
+    overflow-x: auto;
+}
+@media (max-width: 1200px) {
+    .projet { 
+        min-width: 200px;
+        margin: 0 10px;
+    }
 }
 
-.projet{
+.projet {
     width: 85%;
     height: 550px;
-    background: #D9D9D9;
-    box-shadow: 0 8px 15px #212e3b;
+    box-shadow: rgb(33, 46, 59) 0px 8px 15px;
+    overflow-x: auto;
+    background: rgb(33, 46, 59);
+}
+
+#mesprojets{
+    margin-top: 8%;
+    font-size: 35px;
+    color: #48DBFB;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 5%;
 }
 
 #projet2{
@@ -194,18 +217,18 @@ nav :hover{
     justify-self: end;
 }
 
-.pro1{
+.pro1 {
     width: 94%;
     height: auto;
     margin-left: 3%;
     margin-top: 3%;
 }
 
-.texteprojet{
+.texteprojet {
     font-size: 20px;
     margin-left: 3%;
     margin-top: 3%;
-    color: #000;
+    color: rgb(72, 219, 251);
 }
 
 #casecontact{
@@ -216,16 +239,14 @@ nav :hover{
     margin:8% 0 0 0
 }
 
-#cont{  
-    padding-top: 7%;
-}
-
 #Numéro{
     justify-self: center;
     width: 40%;
     padding: 3%;
     background-color: #2C3E50;
     box-shadow: 0 0 20px #212e3b;
+    overflow-x: auto;
+    margin: 0 27vw;
 }
 
 .content{
@@ -243,6 +264,7 @@ nav :hover{
 .form-group label{
     display: block;
     margin-bottom: 20px;
+    overflow-x: auto;
 }
 .form-group{
     margin:40px auto;
@@ -268,6 +290,7 @@ nav :hover{
     align-items: center;
     color: #00d9ff;
     border: 2px solid #00d9ff;
+    overflow-x: auto;
 }
 .form-group input, .form-group textarea {
     width: 100%;
@@ -293,4 +316,109 @@ button{
     color: #00d9ff;
     box-sizing: border-box;
     overflow: auto;
+}
+
+
+
+
+
+
+
+
+/* CV Image */
+#imgcv{
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0 0 20px #212e3b;
+}
+
+#downloadcv{
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    text-align: center;
+    padding: 15px;
+    background-color: #2C3E50;
+    color: #00d9ff;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #212e3b;
+    font-size: 20px;
+}
+
+
+/* Projet1 Images */
+.iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.texte-pages-projet {
+    color: #00d9ff;
+    font-size: 20px;
+    text-align: center;
+    margin: 5% 5% 0;
+    background-color: #223343;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.texte-pages-projet2 {
+    color: #00d9ff;
+    width: fit-content;
+    font-size: 20px;
+    justify-self: center;
+    text-align: center;
+    background-color: #223343;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+/* Projet2 Images */
+#imgprojet2{
+    width: 23%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0 0 20px #212e3b;
+}
+
+#code-projet{
+    color: #00d9ff;
+    width: fit-content;
+    justify-self: center;
+    background-color: #223343;
+    border-radius: 50px;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+pre {
+  /* 1. Active le scroll horizontal (le slide) */
+  overflow-x: auto; 
+  
+  /* 2. Empêche le bloc de dépasser la largeur de l'écran (mobile) */
+  max-width: 75%;
+  
+  /* 3. Force le code à rester sur une seule ligne (pas de retour à la ligne automatique) */
+  white-space: pre; 
+  
+  /* 4. Pour un défilement fluide sur mobile (iOS) */
+  -webkit-overflow-scrolling: touch;
+}
+
+#btn-retour{
+    margin-left: 45%;
+    margin-top: 5%;
+    width: 10%;
 }
