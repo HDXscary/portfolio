@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5LLZQWLZ');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tom HILAIRE - PORTEFOLIO</title>
+    <title>Tom HILAIRE - PORTEFOLIO BTS SIO</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" href="favicon.svg">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <meta name="description" content="Découvrez le portfolio de Tom Hilaire, étudiant en BTS SIO passionné d'informatique. Retrouvez mon parcours, mes expériences professionnelles, mes projets web et mon CV en ligne.">
+    <meta name="google-site-verification" content="O14MiB7WK8-Hnk-Jubny6ctHHfBKJqhRbiwjaYF5gbY" />
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LLZQWLZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav>
         <img id="lg" src="image/logo1.png" alt="Photo de profil" >
         <div id="menu">
@@ -20,7 +37,7 @@
     </nav>
     <main>
         <section id="tom-link">
-            <h2 class="presentation" id="Tom">Tom HILAIRE</h2>
+            <h1 class="presentation" id="Tom">Tom HILAIRE</h1>
             <p class="presentation">Etudiant en BTS SIO</p>
             <img id="logo" src="image/logo1.png" alt="Photo de profil" >
         </section>
@@ -59,7 +76,10 @@
             </div>
         </section>
         <section id="casecontact">
-            <h2 class="title">CONTACT</h2>
+            <h2 id="ct">CONTACT</h2>
+            <form id="link" action="https://www.linkedin.com/in/ton-profil" target="_blank">
+                <button id="linkedin" type="submit">Mon LinkedIn</button>
+            </form>
             <div>
                 <div class="content" style="max-width: 600px;">
                     <p class="formulaire">formulaire pour me contacter</p>
@@ -79,7 +99,7 @@
                             <textarea id="requete" name="requete" placeholder="Votre message..." required></textarea>
                         </div>
 
-                        <button type="submit" class="button submit">Envoyer le message</button>
+                        <button class="send" type="submit" class="button submit">Envoyer le message</button>
                     </form>
                     <div id="formMessage"></div>
                 </div>

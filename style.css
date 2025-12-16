@@ -239,6 +239,16 @@ nav {
     margin:8% 0 0 0
 }
 
+#Numéro{
+    justify-self: center;
+    width: 40%;
+    padding: 3%;
+    background-color: #2C3E50;
+    box-shadow: 0 0 20px #212e3b;
+    overflow-x: auto;
+    margin: 0 27vw;
+}
+
 .content{
     margin:70px auto;
     width: 50%;
@@ -296,7 +306,7 @@ nav {
     box-sizing: border-box;
 }
 
-button{
+.send{
     margin-left: 60%;
     width: 30%;
     padding: 15px;
@@ -308,6 +318,25 @@ button{
     overflow: auto;
 }
 
+#ct{
+    margin-top: 8%;
+    font-size: 35px;
+    color: #48DBFB;
+    margin-bottom: 3%;
+    text-decoration: underline;
+    padding-top: 5%;
+}
+
+#linkedin {
+    width: 30%;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid #00d9ff;
+    background: #2C3E50;
+    color: #00d9ff;
+    box-sizing: border-box;
+    overflow: auto;
+}
 
 
 
