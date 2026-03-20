@@ -1,3 +1,20 @@
+const naissance = new Date("2006-07-09");
+const aujourdHui = new Date();
+
+let age = aujourdHui.getFullYear() - naissance.getFullYear();
+const annivPasse =
+    aujourdHui.getMonth() > naissance.getMonth() ||
+    (aujourdHui.getMonth() === naissance.getMonth() &&
+     aujourdHui.getDate() >= naissance.getDate());
+
+if (!annivPasse) age--;
+
+document.getElementById("age").textContent = age;
+
+
+
+
+
 // Gestion du menu de navigation
 // Afficher/masquer le menu lors du clic sur le logo
 document.getElementById("lg").onclick = function() {

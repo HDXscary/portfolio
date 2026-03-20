@@ -15,44 +15,58 @@
         <div id="menu">
             <a href="index.html#Tom">ACCUEIL</a>
             <a href="index.html#moi">MIEUX ME CONNAÎTRE</a>
-            <a href="index.html#PARCOUR">MON PARCOUR</a>
+            <a href="index.html#PARCOUR">MON PARCOURS</a>
             <a href="index.html#PROJETS">MES PROJETS</a>
             <a href="CV.html" id="CV" >CV</a>
             <a href="index.html#casecontact" id="CONTACT">CONTACT</a>
         </div>
     </nav>
     <main>
-        <section>
-            <img id="imgprojet2" src="image/imgprojet3.png" alt="img²projet3">
-        <section>
-            <p class="texte-pages-projet2">Ce projet est un projet du site web CSSBattle où nous devons reproduire une forme avec uniquement du code CSS.</p>
-        </section>
-        <section>
-            <pre id="code-projet" style="display: none;">
-                <code>
-                    &lt;P&gt;
-                    &lt;style&gt;
-                        & {
-                            background: #EA9A52;
-                            margin: 82px 52px;
-                            * {
-                                background: #6255AA;
-                                clip-path: polygon(0 50%, 80px 0, 200px 0, 100% 50%, 200px 100%, 80px 100%);
-                                P {
-                                    height: 100%;
-                                    background: #fff;
-                                    clip-path: polygon(0 0, 50% 45px, 100% 0, 100% 100%, 50% 75px, 0 100%);
-                                    margin: 0 80px;
-                                }
-                            }
-                        }
-                    &lt;/style&gt;
-                </code>
-            </pre>
-            <button class="send" id="btn-afficher-code" onclick="toggleCode()">Afficher le code</button>
-        </section>
-        <section>
-            <button class="send" id="btn-retour" onclick="window.location.href='index.html#PROJETS'">retour</button>
+        <section class="project-details">
+            <div class="container">
+                <h2 class="main-title">Base de Données Relationnelle - Plateforme de Quiz</h2>
+        
+                <p class="project3-intro">
+                    Ce projet, effectué dans le cadre de ma formation, consiste à créer une base de données pour un site proposant plusieurs quiz. 
+                    J'ai organisé les données dans plusieurs tables liées par des clés étrangères, afin de pouvoir gérer et afficher correctement chaque quiz avec ses questions et ses réponses.
+                </p>
+
+                <div class="step-card">
+                    <div class="texte-pages-projet">
+                        <h3>1. Conception et Modélisation (MCD)</h3>
+                        <p>Avant toute implémentation, j'ai réalisé le <strong>MCD (Modèle Conceptuel de Données)</strong>. Cette étape a été essentielle pour définir les entités (Quiz, Question, Réponse) et leurs relations. Cela garantit la cohérence des données et permet une gestion dynamique des différents quiz.</p>
+                    </div>
+                    <div class="imageprojet3">
+                        <img src="image/imgprojet3.png" alt="Mon schéma MCD">
+                        <span class="texte-pages-projet">Modèle Conceptuel de Données (MCD)</span>
+                    </div>
+                </div>
+
+                <div class="step-card reverse">
+                    <div class="texte-pages-projet">
+                        <h3>2. Environnement Docker & DBeaver</h3>
+                        <p>Pour l'hébergement, j'ai déployé un conteneur <strong>SQL Server</strong> via <strong>Docker Desktop</strong>. Pour administrer cette base, j'ai utilisé <strong>DBeaver</strong>, ce qui m'a permis de visualiser le schéma relationnel et de vérifier la bonne liaison entre les tables via les clés étrangères.</p>
+                    </div>
+                    <div class="imageprojet3">
+                        <img src="image/dbeaverprojet3.png" alt="Schéma relationnel DBeaver">
+                        <span class="texte-pages-projet">Vue relationnelle des tables sous DBeaver</span>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="texte-pages-projet">
+                        <h3>3. Implémentation et Scripts SQL</h3>
+                        <p>J'ai rédigé des scripts SQL complets pour automatiser la création de la structure (DDL) et l'insertion des données de test (DML). Ces scripts incluent la création des tables, la définition des types de données et la mise en place de l'intégrité référentielle.</p>
+                    </div>
+                    <div class="imageprojet3">
+                        <img src="image/scriptsprojet3.png" alt="Mes scripts SQL">
+                        <span class="texte-pages-projet"><br>Extrait des scripts de création et d'insertion SQL</span>
+                    </div>
+                </div>
+                <div class="footer-action">
+                    <a href="index.html#mes-projets" class="btn-retour">retour</a>
+                </div>
+            </div>
         </section>
     </main>
     <script src="script.js"></script>

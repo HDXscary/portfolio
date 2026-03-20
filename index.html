@@ -17,6 +17,7 @@
     <link rel="icon" href="favicon.svg">
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <meta name="description" content="Découvrez le portfolio de Tom Hilaire, étudiant en BTS SIO passionné d'informatique. Retrouvez mon parcours, mes expériences professionnelles, mes projets web et mon CV en ligne.">
+    <meta name="google-site-verification" content="O14MiB7WK8-Hnk-Jubny6ctHHfBKJqhRbiwjaYF5gbY" />
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -28,7 +29,7 @@
         <div id="menu">
             <a href="#tom-link" class="nav-link active">ACCUEIL</a>
             <a href="#mmc-link" class="nav-link">MIEUX ME CONNAÎTRE</a>
-            <a href="#PARCOUR" class="nav-link">MON PARCOUR</a>
+            <a href="#PARCOUR" class="nav-link">MON PARCOURS</a>
             <a href="#PROJETS" class="nav-link">MES PROJETS</a>
             <a href="CV.html" id="CV" >CV</a>
             <a href="#casecontact" class="nav-link" id="CONTACT">CONTACT</a>
@@ -42,20 +43,23 @@
         </section>
         <section id="mmc-link">
             <h2 id="moi" class="title">MIEUX ME CONNAÎTRE</h2>
-            <p class="text">Je m'appelle Tom HILAIRE, j'ai 19 ans </p>
-            <p class="saut">Je suis également passionné par le sport et l'informatique.</p>
+            <p class="text">Je m'appelle Tom HILAIRE, j'ai <span id="age"></span> ans. </p>
+            <p class="text">Je suis à la recherche d'un stage de 7 semaines dans le domaine du développement web du 11 mai au 26 juin 2026. Je suis également à la recherche d'une alternance pour l'année scolaire 2026-2027 dans le même domaine.</p>
+            <p class="text">Je suis un étudiant en première année de BTS SIO. Etant passionné par l'informatique et le sport, je souhaite développer mes compétences techniques via des projets concrets.</p>
+            <p class="saut">En dehors de mes études, je travaille sur des projets personnels pour améliorer mes compétences en programmation et en développement web.</p>
+
         </section>
         <section id="PARCOUR">
-            <h2 class="title">MON PARCOUR</h2>
+            <h2 class="title">MON PARCOURS</h2>
             <h2 class="parcour">ÉTUDES</h2>
-            <p class="metier">BTS SIO au Lycée saint- Bénigne (en cours)</p>
-            <p class="text">BAC PRO Systèmes Numériques (option RISC)</p>
-            <p class="metier">obtenu en 2025</p>
-            <h2 class="parcour">EXPÉRIENCES PROFESSIONNEL</h2>
-            <p class="text">Technicien support de niveau 1 en 2025</p>
-            <p class="metier">entreprise STACKR</p>
-            <p class="text">Technicien support de niveau 1 en 2024</p>
-            <p class="metier">entreprise STACKR</p>
+            <p class="metier">BTS SIO au Lycée Saint- Bénigne (en cours)</p>
+            <p class="txtprc">BAC PRO Systèmes Numériques (option RISC)</p>
+            <p class="metier">Obtenu en 2025</p>
+            <h2 class="parcour">EXPÉRIENCES PROFESSIONNELLES</h2>
+            <p class="txtprc">Technicien support de niveau 1 en 2025</p>
+            <p class="metier">Entreprise STACKR</p>
+            <p class="txtprc">Technicien support de niveau 1 en 2024</p>
+            <p class="metier">Entreprise STACKR</p>
         </section>
         <section id="PROJETS">
             <h2  id="mesprojets">MES PROJETS</h2>
@@ -66,25 +70,25 @@
                 </div>
                 <div onclick="window.location.href='projet2.html'" id="projet2" class="projet">
                     <img class="pro1" src="image/imgprojet2.png" alt="projet1">
-                    <p class="texteprojet">Ce projet est un exercice réalisé sur un site web CSSBattle.</p>
+                    <p class="texteprojet">Ce projet, réalisé durant ma formation, consiste à développer mon portfolio professionnel en ligne. J'ai structuré le site en HTML/CSS avec une approche responsive, afin de présenter de manière claire et organisée mon parcours ainsi que mes réalisations en développement.</p>
                 </div>
                 <div onclick="window.location.href='projet3.html'" id="projet3" class="projet">
                     <img class="pro1" src="image/imgprojet3.png" alt="projet1">
-                    <p class="texteprojet">Ce projet est un exercice réalisé sur un site web CSSBattle.</p>
+                    <p class="texteprojet">Ce projet, effectué dans le cadre de ma formation, consiste à créer une base de données pour un site proposant plusieurs quiz. J'ai organisé les données dans plusieurs tables liées par des clés étrangères, afin de pouvoir gérer et afficher correctement chaque quiz avec ses questions et ses réponses.</p>
                 </div>
             </div>
         </section>
         <section id="casecontact">
             <h2 id="ct">CONTACT</h2>
-            <form id="link" action="https://www.linkedin.com/in/ton-profil" target="_blank">
+            <form id="link" action="https://www.linkedin.com/in/tom-hilaire" target="_blank">
                 <button id="linkedin" type="submit">Mon LinkedIn</button>
             </form>
             <div>
                 <div class="content" style="max-width: 600px;">
-                    <p class="formulaire">formulaire pour me contacter</p>
+                    <p class="formulaire">Formulaire pour me contacter</p>
                     <form id="requeteform">
                         <div class="form-group">
-                            <label for="name">nom *</label>
+                            <label for="name">Nom *</label>
                             <input type="text" id="name" name="name" placeholder="Votre nom" required>
                         </div>
 
