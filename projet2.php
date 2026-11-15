@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom HILAIRE - PORTEFOLIO</title>
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img id="lg" src="image/logo1.png" alt="Photo de profil" >
+        <div id="menu">
+            <a href="index.php#Tom">ACCUEIL</a>
+            <a href="index.php#moi">MIEUX ME CONNAÎTRE</a>
+            <a href="index.php#PARCOUR">MON PARCOURS</a>
+            <a href="index.php#PROJETS">MES PROJETS</a>
+            <a href="CV.php" id="CV" >CV</a>
+            <a href="index.php#casecontact" id="CONTACT">CONTACT</a>
+        </div>
+    </nav>
+    <main>
+        <section class="project-details">
+            <div class="container">
+                <h2 class="main-title">Conception et Déploiement de mon portfolio</h2>
+        
+                <p class="project3-intro">
+                    Ce projet, réalisé en autonomie et durant ma formation, consiste à concevoir et développer mon portfolio professionnel. L'objectif est de centraliser mes réalisations techniques et de proposer une vitrine interactive accessible aux recruteurs.
+                </p>
+                <div class="step-card">
+                    <div class="texte-pages-projet">
+                        <h3>1. Conception et Design (UI/UX)</h3>
+                        <p>J'ai débuté par une phase de recherche ergonomique pour créer une interface moderne en Dark Mode. L'enjeu était de structurer l'information de manière intuitive afin de faciliter la navigation entre mon parcours, mes compétences et mes projets. Cette étape de conception a permis de définir l'identité visuelle du site avant son intégration.</p>
+                    </div>
+                    <div class="imageprojet3">
+                        <img src="image/MaquetteFigmaInitial.png" alt="Ma maquette figma">
+                        <span class="texte-pages-projet">Maquette figma initial</span>
+                    </div>
+                </div>
+
+                <div class="step-card reverse">
+                    <div class="texte-pages-projet">
+                        <h3>2. Développement Front-End</h3>
+                        <p>Le site est développé en HTML5, CSS3 et JavaScript.</p>
+                        <ul class="custom-list">
+                            <li><strong>Dynamisme :</strong> Le JavaScript gère l'interactivité (animations, boutons de redirection).</li>
+                            <li><strong>Adaptabilité :</strong> L'utilisation des Media Queries assure un rendu Responsive, permettant une consultation optimale sur PC, tablette et smartphone.</li>
+                        </ul>
+                    </div>
+                    <div class="imageprojet3">
+                        <img src="image/CodeHTML-CSS-JS.png" alt="Exemple de code HTML/CSS/JS">
+                        <span class="texte-pages-projet">Exemple de code HTML/CSS/JS</span>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="texte-pages-projet">
+                        <h3>3. Infrastructure et DevOps</h3>
+                        <p>Le versionnage est assuré par Git. Pour le déploiement, j'utilise la plateforme Azure DevOps, ce qui me permet de gérer le cycle de vie du projet de manière professionnelle. Le site est actuellement hébergé via Azure App Service.</p>
+                    </div>
+                    <div class="imageprojet3">
+                        <img src="image/AzureDevOpsprojet2.png" alt="Azure DevOps">
+                        <span class="texte-pages-projet"><br>Illustration du projet dans Azure DevOps</span>
+                    </div>
+                </div>
+                <div class="step-card reverse">
+                    <div class="texte-pages-projet">
+                        <h3>3. Évolution du projet (En cours)</h3>
+                        <p>Dans une démarche d'amélioration, je travaille sur une nouvelle version utilisant le framework Bootstrap. Cette mise à jour vise à optimiser la structure du code et à moderniser l'UI/UX, bien qu'elle ne soit pas encore déployée.</p>
+                    </div>
+                    <div class="imageprojet3">
+                        <img src="image/CodeBootstrap.png" alt="changement Bootstrap">
+                        <span class="texte-pages-projet"><br>Exemple de partie transformer avec Bootstrap</span>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <a href="https://github.com/HDXscary/portfolio" target="_blank" class="btn-retour" style="text-decoration: none;">
+                        Consulter sur GitHub
+                    </a>
+                </div>
+                <div class="footer-action">
+                    <a href="index.php#mes-projets" class="btn-retour">retour</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+<?php include_once 'footer.php';?> 
+
+</html>
+
